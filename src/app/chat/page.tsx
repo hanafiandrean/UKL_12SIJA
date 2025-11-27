@@ -33,7 +33,6 @@ export default function ChatPage() {
         headers: { "content-type": "application/json" },
         body: JSON.stringify({
           messages: [
-            // optional: sisipkan system note ringan di depan percakapan
             { role: "system", content: "Keep answers short, actionable, and IoT-focused." },
             ...messages,
             userMsg,
